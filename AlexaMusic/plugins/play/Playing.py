@@ -43,7 +43,7 @@ from AlexaMusic.plugins.play.filters import command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@app.on_message(command(PLAY_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(PLAY_COMMAND) & filters.channel)
 @PlayWrapper
 async def play_commnd(
     client,
@@ -68,8 +68,8 @@ async def play_commnd(
     slider = None
     plist_type = None
     spotify = None
-    user_id = message.from_user.id
-    user_name = message.from_user.first_name
+    user_id = None
+    user_name = None
     audio_telegram = (
         (message.reply_to_message.audio or message.reply_to_message.voice)
         if message.reply_to_message
