@@ -19,12 +19,12 @@ from AlexaMusic import app
 from AlexaMusic.core.call import Alexa
 from AlexaMusic.utils.database import is_muted, mute_on
 from AlexaMusic.utils.decorators import AdminRightsCheck
-
+from AlexaMusic.plugins.play.filters import command
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
 
 
-@app.on_message(filters.command(MUTE_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(MUTE_COMMAND) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def mute_admin(cli, message: Message, _, chat_id):
     if not len(message.command) == 1 or message.reply_to_message:
