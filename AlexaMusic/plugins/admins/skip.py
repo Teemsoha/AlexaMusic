@@ -25,12 +25,13 @@ from AlexaMusic.utils.inline.play import stream_markup, telegram_markup
 from AlexaMusic.utils.stream.autoclear import auto_clean
 from AlexaMusic.utils.thumbnails import gen_thumb
 from AlexaMusic.utils.theme import check_theme
+from AlexaMusic.plugins.play.filters import command
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
 
 
-@app.on_message(filters.command(SKIP_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(SKIP_COMMAND) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def skip(cli, message: Message, _, chat_id):
     if not len(message.command) < 2:
