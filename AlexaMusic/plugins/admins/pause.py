@@ -9,7 +9,7 @@ This program is free software: you can redistribute it and can modify
 as you want or you can collabe if you have new ideas.
 """
 
-
+from AlexaMusic.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -24,7 +24,7 @@ from AlexaMusic.utils.decorators import AdminRightsCheck
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
-@app.on_message(filters.command(PAUSE_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(PAUSE_COMMAND) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def pause_admin(cli, message: Message, _, chat_id):
     if not len(message.command) == 1:
