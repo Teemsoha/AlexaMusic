@@ -19,12 +19,12 @@ from AlexaMusic import app
 from AlexaMusic.core.call import Alexa
 from AlexaMusic.utils.database import is_music_playing, music_on
 from AlexaMusic.utils.decorators import AdminRightsCheck
-
+from AlexaMusic.plugins.play.filters import command
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
 
 
-@app.on_message(filters.command(RESUME_COMMAND) & filters.group & ~BANNED_USERS)
+@app.on_message(command(RESUME_COMMAND) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def resume_com(cli, message: Message, _, chat_id):
     if not len(message.command) == 1:
