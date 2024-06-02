@@ -44,7 +44,7 @@ loop = asyncio.get_running_loop()
 
 
 @app.on_message(
-    filters.command(get_command("START_COMMAND")) & filters.private & ~BANNED_USERS
+    filters.command(get_command(["dia","بوتت"])) & filters.private & ~BANNED_USERS
 )
 @LanguageStart
 async def start_comm(client, message: Message, _):
