@@ -12,16 +12,6 @@
     "pyrogram"
     ],
     "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "24514467",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "5a8c3d38c4d89b672062c5ff015380c7",
-        "required": true
-      },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
         "value": "",
@@ -29,17 +19,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "6938671104",
-        "required": true
-      },        
-      "MONGO_DB_URI": {
-        "description": "Mongo DB URL",
-        "value": "mongodb+srv://proceed58:proceed58@cluster0.p5s9ym5.mongodb.net/?retryWrites=true&w=majority",
-        "required": true
-      },
-      "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot.",
-        "value": "ريماكس",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
