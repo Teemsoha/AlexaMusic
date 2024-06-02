@@ -18,12 +18,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "24514467"))
+API_HASH = getenv("API_HASH", "5a8c3d38c4d89b672062c5ff015380c7")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://proceed58:proceed58@cluster0.p5s9ym5.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
@@ -31,9 +31,9 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "dina")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "6174058850 5745099463").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6938671104").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
@@ -47,9 +47,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Alexa_BotUpdates")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://youtube.com/@nexpo01?si=QJq-CcC-duE6ppsp")
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Alexa_Help")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://youtube.com/@nexpo01?si=QJq-CcC-duE6ppsp")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -67,7 +67,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Teemsoha/AlexaMusic")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 
