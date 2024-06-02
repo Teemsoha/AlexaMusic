@@ -142,7 +142,7 @@ async def gen_thumb(videoid, user_id, theme):
             text_w, text_h = draw.textsize(f"ALEXA MUSIC IS PLAYING OP", font=font)
             draw.text(
                 ((1280 - text_w) / 2, 30),
-                f"𝐒𝐎𝐇𝐀 𝐓𝐇𝐄 𝐁𝐄𝐒𝐓 𝐀𝐑𝐀𝐁𝐈𝐂 𝐌𝐔𝐒𝐈𝐂",
+                f"SOHA MUSIC BOT",
                 fill="red",
                 font=font,
             )
@@ -301,7 +301,7 @@ async def gen_qthumb(videoid, user_id, theme):
             text_w, text_h = draw.textsize(f"ALEXA ADDED THIS SONG TO QUEUE", font=font)
             draw.text(
                 ((1280 - text_w) / 2, 30),
-                f"𝐒𝐎𝐇𝐀 𝐓𝐇𝐄 𝐁𝐄𝐒𝐓 𝐀𝐑𝐀𝐁𝐈𝐂 𝐌𝐔𝐒𝐈𝐂",
+                f"SOHA MUSIC BOT",
                 fill="red",
                 font=font,
             )
