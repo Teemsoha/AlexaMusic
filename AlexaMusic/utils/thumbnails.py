@@ -142,7 +142,7 @@ async def gen_thumb(videoid, user_id, theme):
             text_w, text_h = draw.textsize(f"ALEXA MUSIC IS PLAYING OP", font=font)
             draw.text(
                 ((1280 - text_w) / 2, 30),
-                f"ALEXA MUSIC IS PLAYING OP",
+                f"ميـوزك سهى العربي اللأفضل بالتلي",
                 fill="red",
                 font=font,
             )
@@ -177,14 +177,14 @@ async def gen_thumb(videoid, user_id, theme):
                 )
         except:
             pass
-        text_w, text_h = draw.textsize(f"YouTube: Jankari Ki Duniya", font=arial)
+        text_w, text_h = draw.textsize(f"YouTube: Nexpo Arabic ", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 620),
-            f"YouTube: Jankari Ki Duniya",
+            f"YouTube: Nexpo Arabic ",
             fill="white",
             font=arial,
         )
-        text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
+        text_w, text_h = draw.textsize(f"المدة : {duration} Mins", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 660),
             f"Duration: {duration} Mins",
