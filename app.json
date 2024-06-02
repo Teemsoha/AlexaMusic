@@ -37,6 +37,11 @@
         "value": "",
         "required": false
       },
+      "UPSTREAM_REPO": {
+        "description": "لا تغير بيها نهائي",
+        "value": "https://github.com/Teemsoha/AlexaMusic",
+        "required": true
+      },
       "LOG_GROUP_ID": {
         "description": "ايدي جروب السجل ، بحيث يكون البوت والحساب المساعد مشرفين فيه ، والمكالمة مفتوحه فيه .",
         "value": "",
