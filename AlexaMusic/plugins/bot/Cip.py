@@ -14,7 +14,7 @@ from pyrogram.types import (
 )
 from AlexaMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
-from config import LOGGER_ID, OWNER_ID
+from config import LOG_GROUP_ID, OWNER_ID
 
 @app.on_message(filters.regex("^رابط الحذف$"))
 async def delet(client: Client, message: Message):
@@ -54,7 +54,7 @@ async def kstr(client: Client, message: Message):
        buttons = [[InlineKeyboardButton(gti, url=f"{link}")]]
        reply_markup = InlineKeyboardMarkup(buttons)
        
-       await app.send_message(LOGGER_ID, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
+       await app.send_message(LOG_GROUP_ID, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
        reply_markup=reply_markup,
        )
        await message.reply_text(
