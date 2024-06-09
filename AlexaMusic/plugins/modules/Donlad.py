@@ -18,7 +18,7 @@ def remove_if_exists(path):
     if os.path.exists(path):
         os.remove(path)
         
-lnk= "https://t.me/" +config.CHANNEL_LINK
+
 @app.on_message(command(["song","/song", "بحث"]))
 async def song_downloader(client, message: Message):
     query = " ".join(message.command[1:])
