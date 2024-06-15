@@ -5,30 +5,14 @@
     "repository": "https://github.com/Teemsoha/AlexaMusic",
   "stack": "container",
     "env": {
-        "SESSION_NAME": {
+        "STRING_SESSION": {
             "description": "fill with the pyrogram session string from account",
             "required": true
         },
-        "SESSION2": {
-            "description": "fill with the pyrogram session string from account",
-            "required": false
-        },
-        "SESSION3": {
-            "description": "fill with the pyrogram session string from account",
-            "required": false
-        },
-        "SESSION4": {
-            "description": "fill with the pyrogram session string from account",
-            "required": false
-        },
-        "SESSION5": {
-            "description": "fill with the pyrogram session string from account",
-            "required": false
-        },
-        "BOT_USERNAME": {
+        "BOT_TOKEN": {
             "description": "fill with telegram id of account",
             "required": true,
-            "value": "Zaid2_Robot"
+            "value": ""
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
@@ -45,37 +29,22 @@
             "required": false,
             "value": "4e984ea35f854762dcde906dce426c2d"
         },
-        "HEROKU_MODE": {
-            "description": "Warning ⚠️! don't Change this, if you change this it will cause of banning your heroku account!",
-            "required": false,
-            "value": "ENABLE"
-        },
-        "GROUP_SUPPORT": {
-            "description": "Ur Support Group Username",
-            "required": false,
-            "value": "TheSupportChat"
-        },
-        "UPDATES_CHANNEL": {
-            "description": "Your Updates Channel",
-            "required": false,
-            "value": "TheUpdatesChannel"
-        },
-        "SUDO_USERS": {
+        "UPSTREAM_REPO": {
             "description": "fill with the user id who can access all function in your bot (separate with space).",
             "required": true,
-            "value": "1669178360"
+            "value": "https://github.com/Teemsoha/AlexaMusic"
         },
-        "DURATION_LIMIT": {
+        "UPSTREAM_BRANCH": {
             "description": "filled, don't change this !",
             "required": true,
-            "value": "540000"
+            "value": "dina"
         },
-        "BOT_NAME": {
+        "LOG_GROUP_ID": {
             "description": "Tell us your bot name else don't change this !",
             "required": true,
-            "value": "Zaid"
+            "value": ""
         },
-        "BOT_TOKEN": {
+        "OWNER_ID": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
             "value": ""
