@@ -57,7 +57,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(text="هديتك هنا 💌", url=f"https://youtube.com/@nexpo01?si=LIFZp4OchDVFkbht"),
+            InlineKeyboardButton(text="هديتك هنا 💌", url=f"https://youtube.com/@montv_1?si=OetDT1ds8-DcBKG8"),
         ],
     ]
     return buttons
@@ -83,7 +83,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(text="هديتك هنا 💌", url=f"https://youtube.com/@nexpo01?si=LIFZp4OchDVFkbht"),
+            InlineKeyboardButton(text="هديتك هنا 💌", url=f"https://youtube.com/@montv_1?si=OetDT1ds8-DcBKG8"),
         ],
     ]
     return buttons
@@ -100,7 +100,7 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="هديتك هنا 💞", url=f"https://youtube.com/@nexpo01?si=LIFZp4OchDVFkbht"
+                text="هديتك هنا 💞", url=f"https://youtube.com/@montv_1?si=OetDT1ds8-DcBKG8"
             ),
         ],
         [
