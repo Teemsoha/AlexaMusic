@@ -299,6 +299,6 @@ async def verify(client, message: Message):
         photo=f"https://telegra.ph/file/9a74bd3fc10682ea0a668.jpg",
         caption=f"""إشتراك يوتيوب إجباري \n\n✪ **الإدارة** 🎉\n✪ لأستخدام أوامر الميوزك عليك الأشتراك بقناة اليوتيوب الخاصة بالبوت للأشتراك بالزر تحت \n أشترك ثم استخدم الأوامر بكل سهوله   🌼 ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 إشترك هنا 💮", url=f"https://youtube.com/@nexpo01?si=LIFZp4OchDVFkbht")]]
+            [[InlineKeyboardButton("🌼 إشترك هنا 💮", url=f"https://youtube.com/@montv_1?si=OetDT1ds8-DcBKG8")]]
         ),
     )
