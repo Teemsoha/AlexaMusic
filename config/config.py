@@ -21,7 +21,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "24514467"))
 API_HASH = getenv("API_HASH", "5a8c3d38c4d89b672062c5ff015380c7")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6290895925:AAFuEiCfUdwrF2ebOmihKzUvkxQyfoDg0R0")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://proceed58:proceed58@cluster0.p5s9ym5.mongodb.net/?retryWrites=true&w=majority")
 
@@ -29,7 +29,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002106772200"))
 
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "dina")
 
@@ -41,7 +41,7 @@ BOT_ID = getenv("BOT_ID")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Teemsoha/AlexaMusic")
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -86,7 +86,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAGi8fAAgA4maWV96Kbu8jvDM21KczN37_z5NzkoSMkgANvGZ9MMV4Yu-CqlxcOWEsLvea-77VHOd0dCESTL5t5UJacoYeEpltmjoegDpOmPtfWTzawMUL2PHb_BVjKRw-UhYcGLuVWZq9Kb_Fqiwd2cgkpvbfQhafHhPPL0xP3BbghlUbBVrs17kRPYCwp6gkXjiZ-gb7G1gDiViE7AhgjiJkFCc6XsvLk5Ga7fjN393_Jj7MefQ9bwdVIwc418XCGRtK6j7vCGGigQNhzbod3gEjKHk3LL4v0Ufmw61R2DxUa2194rgVaNAo0paB0CYAoyj-f8SxFK40lknAfjFZHyYJSzPAAAAAGa6e0hAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
