@@ -18,7 +18,6 @@ PyYAML
 requests
 speedtest-cli
 spotipy
-tgcrypto
 yt-dlp==2023.10.13
 youtube-search
 youtube-search-python
